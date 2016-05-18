@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by Andy_Lin on 16/4/14.
+//  Copyright © 2016年 Andy_Lin. All rights reserved.
+//
+
+#ifndef _1_______PrefixHeader_pch
+#define _1_______PrefixHeader_pch
+
+#import "UIView+MOExtension.h"
+#import "UIBarButtonItem+MOExtension.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "MOConst.h"
+#import "MOPublicMethod.h"
+#import "NSDate+MOExtension.h"
+#import "SVProgressHUD.h"
+#import <POP.h>
+
+#ifdef DEBUG
+#define MOLog(...) NSLog(__VA_ARGS__)
+#else
+#define MOLog(...)
+#endif
+#define MAINSCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define MAINSCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define MOLogFunc MOLog(@"%s", __func__)
+
+#define MORGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define MOGlobalBg MORGBColor(223, 223, 223)
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
