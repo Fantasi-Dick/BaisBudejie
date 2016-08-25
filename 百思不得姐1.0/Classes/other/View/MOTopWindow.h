@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-UIWindow *window_;
-
 @interface MOTopWindow : NSObject
 
 
